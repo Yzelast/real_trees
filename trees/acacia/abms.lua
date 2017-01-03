@@ -7,7 +7,7 @@ minetest.register_abm {
     action = function(pos)
     
         if can_grow(pos,5,1) and (not minetest.get_node_timer(pos):is_started()) then
-            minetest.get_node_timer(pos):start(5)
+            minetest.get_node_timer(pos):start(480)
         end
     end
 
@@ -23,7 +23,7 @@ minetest.register_abm {
         
         local node = minetest.get_node({x=pos.x,y=pos.y + 1,z=pos.z})
             if node.name == "default:acacia_leaves" and can_grow(pos,5,2) and (not minetest.get_node_timer(pos):is_started()) then
-                minetest.get_node_timer(pos):start(5)
+                minetest.get_node_timer(pos):start(480)
             end       
     end
 
@@ -39,7 +39,7 @@ minetest.register_abm {
         
         local node = minetest.get_node({x=pos.x,y=pos.y + 2,z=pos.z})
             if node.name == "real_trees:slab_acacia_leaves" and can_grow(pos,5,3) and (not minetest.get_node_timer(pos):is_started()) then                            
-                minetest.get_node_timer(pos):start(5)                                                          
+                minetest.get_node_timer(pos):start(480)                                                          
             end
     end
 
@@ -55,7 +55,7 @@ minetest.register_abm {
         
         local node = minetest.get_node({x=pos.x,y=pos.y + 2,z=pos.z})
             if node.name == "real_trees:h_large_acacia_tree" and can_grow(pos,5,4) and (not minetest.get_node_timer(pos):is_started()) then
-                minetest.get_node_timer(pos):start(5)                                                 
+                minetest.get_node_timer(pos):start(480)                                                 
             end
     end
 

@@ -7,7 +7,7 @@ minetest.register_abm {
     action = function(pos)
     
         if can_grow(pos,3,1) and (not minetest.get_node_timer(pos):is_started()) then
-            minetest.get_node_timer(pos):start(5)
+            minetest.get_node_timer(pos):start(480)
         end
     end
 
@@ -23,7 +23,7 @@ minetest.register_abm {
         
         local node = minetest.get_node({x=pos.x,y=pos.y + 2,z=pos.z})
             if node.name == "real_trees:slab_aspen_leaves" and can_grow(pos,3,2) and (not minetest.get_node_timer(pos):is_started()) then
-                minetest.get_node_timer(pos):start(5)
+                minetest.get_node_timer(pos):start(480)
             end       
     end
 
@@ -40,7 +40,7 @@ minetest.register_abm {
         
         local node = minetest.get_node({x=pos.x,y=pos.y + 5,z=pos.z})
             if node.name == "default:aspen_leaves" and can_grow(pos,3,3) and (not minetest.get_node_timer(pos):is_started()) then                            
-                minetest.get_node_timer(pos):start(5)                                                          
+                minetest.get_node_timer(pos):start(480)                                                          
             end
     end
 
@@ -56,7 +56,7 @@ minetest.register_abm {
         
         local node = minetest.get_node({x=pos.x,y=pos.y + 7,z=pos.z})
             if node.name == "default:aspen_leaves" and can_grow(pos,3,4) and (not minetest.get_node_timer(pos):is_started()) then
-                minetest.get_node_timer(pos):start(5)                                                 
+                minetest.get_node_timer(pos):start(480)                                                 
             end
     end
 

@@ -3,7 +3,7 @@
 This mod aims to make the growth of minetest trees a litte more harder and realistic by adding them stages of growing.
   
    - there are 3 stages between the sapling and the full tree
-   - each one takes 8 minutes to grow to next stage
+   - the growing time differs on each tree
    - small trees can be harvested but gives less wood than a full tree
-   - they growth start only during day with sunlight
+   - they growth can start only with sunlight
  

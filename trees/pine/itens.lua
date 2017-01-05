@@ -27,7 +27,7 @@ minetest.override_item("default:pine_sapling",{
 
 	on_construct = function(pos)
         if can_grow(pos,1,1) then		
-            minetest.get_node_timer(pos):start(5)
+            minetest.get_node_timer(pos):start(480)
         end
 	end,
 

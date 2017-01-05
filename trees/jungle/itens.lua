@@ -27,7 +27,7 @@ minetest.override_item("default:junglesapling",{
 
 	on_construct = function(pos)
         if can_grow(pos,4,1) then		
-            minetest.get_node_timer(pos):start(5)
+            minetest.get_node_timer(pos):start(480)
         end
 	end,
 
